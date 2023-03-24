@@ -1,0 +1,477 @@
+/**
+ * style.css - Style principal de la page
+ */
+
+/**
+ * Polices
+ */
+
+/* Moon Dance */
+@font-face {
+  font-family: "Moon Dance";
+  src: url("assets/fonts/Moon_Dance/MoonDance-Regular.ttf");
+}
+
+/* Poppins */
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+
+/* A FAIRE: Implémenter le style de la page selon la maquette */
+
+
+@media screen and (max-width: 1512px) and (min-width: 753px) {
+
+  #logo {
+    padding-bottom:15px;
+  } 
+
+  .navbar {
+    justify-content: space-between;
+  }
+  
+  li {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .banner {
+    background-size: cover;
+    height: 500px;
+    justify-content: center;
+  }
+
+  #voyage {
+    font-size: 16px;
+  }
+
+  #castle {
+    font-size: 64px;
+  }
+  
+  .btn-decouvrir {
+    font-size: 12px;
+    padding: 8px 20px;
+    border-radius: 4px;
+  }
+
+  .core-title {
+    font-size: 18px;
+  }
+
+  #concept {
+    font-size: 84px;
+  }
+
+  .cards-concept {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .card-concept {
+    font-size: 12px;
+  }
+
+  #chateaux {
+    font-size: 84px;
+    top: 1040px;
+    right: -150px;
+  }
+
+  #contact {
+    font-size: 84px;
+  }
+
+  .contact-infos {
+    font-size: 12px;
+  }
+
+  #footer {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1180px) and (min-width: 820px) {
+
+  #logo {
+    padding-bottom:15px;
+  } 
+
+  .navbar {
+    justify-content: space-between;
+  }
+    
+  li {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .banner {
+    background-size: cover;
+    height: 1100px;
+    justify-content: center;
+  }
+
+  #voyage {
+    font-size: 20px;
+  }
+
+  #castle {
+    font-size: 88px;
+  }
+  
+  .btn-decouvrir {
+    font-size: 14px;
+    padding: 12px 25px;
+    border-radius: 6px;
+  }
+
+  .core-title {
+    font-size: 22px;
+  }
+
+  #concept {
+    font-size: 100px;
+  }
+
+  .cards-concept {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .card-concept {
+    font-size: 16px;
+  }
+
+  #chateaux {
+    font-size: 100px;
+    position: absolute;
+    top: 1800px;
+    right: -60px;
+  }
+
+  #contact {
+    font-size: 100px;
+  }
+
+  .contact-infos {
+    font-size: 14px;
+  }
+
+  #footer {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 844px) and (min-width: 390px) {
+
+  #logo {
+    padding-bottom: 0px;
+  }
+  
+  .navbar {
+    flex-direction: column;
+  }
+  
+  ul {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  
+  li {
+    padding: 5px;
+    font-size: 18px;
+  }
+
+  .banner {
+    background-size: 500% ;
+    height: 600px;
+    padding-top: 30px;
+  }
+
+  #voyage {
+    font-size: 24px;
+  }
+
+  #castle {
+    font-size: 128px;
+  }
+
+  .btn-decouvrir {
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 8px;
+  }
+  
+  .core-title {
+    font-size: 28px;
+    padding: 0px 50px;
+  }
+
+  #concept {
+    font-size: 120px;
+  }
+
+  .cards-concept {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-concept {
+    font-size: 16px;
+  }
+
+  #chateaux {
+    font-size: 120px;
+    top: 1850px;
+    right: -200px;
+  }
+
+  #contact {
+    font-size: 120px;
+  }
+
+  .contact-infos {
+    font-size: 18px;
+  }
+
+  #footer {
+    font-size: 14px;
+  }
+}
+
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* Barre jaune haut de page */
+#yellow-top {
+  background-color: #ecd537;
+  height: 5px;
+}
+
+
+/* Header: Logo + Navbar */
+header {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+#logo {
+  height: 60px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar {
+  display: flex;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  font-family:"Poppins";
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Section banner */
+.banner {
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#voyage {
+  font-family:"Poppins";
+}
+
+#castle {
+  font-family: "Moon Dance";
+  font-weight: 600;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.btn-decouvrir {
+  font-family: "Poppins";
+  font-weight: bold;
+  background: #ecd537;
+}
+
+
+/* Section Core */
+#core {
+  background-color: #1f1f1f;
+}
+
+.core-title {
+  color: white;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* Icons */
+.square {
+  padding: 0px 15px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.yellow { color:#ecd537 }
+.material-icons.black { color:#1f1f1f }
+
+.icon {
+  padding-bottom: 20px;
+}
+
+span {
+  z-index: 1;
+}
+
+
+/* Division Concept */
+.concept {
+  padding-top: 40px;
+}
+
+#concept {
+  font-family: "Moon Dance";
+  color: #2F2F2F;
+  position: absolute;
+  transform: translateX(-40%) translateY(60%) rotate(-90deg);
+  z-index: 0;
+}
+
+.cards-concept {
+  margin: 30px 10% 0px 10%;
+  display: grid;
+  grid-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-concept {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: white;
+  color: #1f1f1f;
+  text-align: center;
+  font-family: "Poppins";
+  width:fit-content;
+  height:fit-content;
+  z-index: 1;
+}
+
+
+/* Division Châteaux */
+#chateaux {
+  font-family: "Moon Dance";
+  color: #2F2F2F;
+  position: absolute;
+  transform: rotate(-90deg);
+  z-index: 0;
+}
+
+ .chateaux {
+  margin-top: 50px;
+} 
+
+.imgs-chateaux {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+  margin: 30px 10% 0px 10%;
+  z-index: 1;
+}
+
+.img-chateau {
+  height: 160px;
+}
+
+
+/* Division Contact */
+#contact {
+  font-family: "Moon Dance";
+  color: #2F2F2F;
+  position: absolute;
+  transform: translateX(-40%) translateY(30%) rotate(-90deg);
+  z-index: 0;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+.contact-infos {
+  color: white;
+  font-family: "Poppins";
+  flex-direction: column;
+  display: grid;
+  justify-content: center; 
+  margin-top: 30px;
+  padding: 0px 10%;
+  z-index: 1;
+}
+
+.contact-info {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  background-color: white;
+  color:#1f1f1f;
+  border-radius: 3px;
+  padding: 4px;
+  margin-right: 15px;
+}
+
+
+/* Footer */
+#footer {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  font-family: "Poppins";
+  padding-bottom: 10px;
+}
+
